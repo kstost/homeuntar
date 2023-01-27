@@ -1,0 +1,8 @@
+{
+  "ignores": [
+    { "type": "item", "str": ".DS_Store" },
+    { "type": "item", "str": "webapp.log" },
+    { "type": "path", "str": ".git"},
+    { "type": "path", "str": "node_modules"}
+  ]
+}
