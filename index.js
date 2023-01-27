@@ -91,7 +91,7 @@ const main = async () => {
     await removing();
     console.log('Not enough space')
   } else {
-    CUtil.isFile(`${os.homedir()}/${backupfile}`) && fs.unlink(`${os.homedir()}/${backupfile}`)
+    CUtil.isFile(`${os.homedir()}/${backupfile}`) && fs.unlinkSync(`${os.homedir()}/${backupfile}`)
     console.log('success')
   }
 }
