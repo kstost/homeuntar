@@ -1,2 +1,2 @@
 pchomebackup.*.*.tar 파일을 ~/ 에 위치시킨 후에 아래 커맨드를 실행한다
-cd ~/ && rm -rf homeuntar && git clone https://github.com/kstost/homeuntar && node ./homeuntar/index.js && rm -rf homeuntar
+cd ~/ && rm -rf homeuntar && git clone https://github.com/kstost/homeuntar && cd homeuntar && npm i && node index.js && cd ~/ && rm -rf homeuntar
