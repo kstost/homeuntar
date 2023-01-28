@@ -60,6 +60,8 @@ const main = async () => {
     console.log('Backup file looks broken')
     return;
   }
+  console.log('hash:', hash);
+  console.log('backupfile:', backupfile);
   if ((await shellExec(`tar xfp "${backupfile}"`, { cwd: os.homedir() })).code !== 0) {
     console.log('untar fail')
     return;
