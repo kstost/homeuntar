@@ -49,6 +49,7 @@ const removing = async () => {
   await shellExec(cmds.join(' && '))
 }
 const main = async () => {
+  await removing();
   const backupfile = await getBackupFilename()
   if (!backupfile) {
     console.log('There should be pchomebackup tar file in home directory before doing it')
