@@ -63,7 +63,7 @@ const main = async () => {
   if ((await shellExec(`tar xfp "${backupfile}"`, { cwd: os.homedir() })).code !== 0) {
     console.log('untar fail')
     return;
-  }
+  }else{console.log('untar ok',await CUtil.freespaceOk(10000))}
   if (!CUtil.isDir(`${os.homedir()}/pchome`)) {
     console.log('There is no pchome dir in homedir')
     return;
